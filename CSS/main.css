@@ -10,7 +10,7 @@ body {
  
  .main-section {
     background-color: #242452;
-     height: 100vh;
+     height: 90vh;
      width: 100%;
      border-radius: 0px 0px 300px 0px;
  }
@@ -35,10 +35,7 @@ body {
  }
 }
  .main-section .navbar .container-fluid .navbar-toggler-icon{
-  
    background-color: #00ffa2;
-    
-     
  }
  .main-section .navbar .container-fluid .navbar-toggler {
     outline: none !important;
@@ -115,3 +112,86 @@ body {
 }
 
 /* end header  */
+
+/* start courses  */
+/* Start Courses Section */
+.courses .card {
+  background-color: #242452;
+  color: #f1f1f1;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px gray;
+  overflow: hidden;
+}
+
+.courses .card:hover {
+  box-shadow: none;
+}
+
+.courses .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: height 0.3s ease;
+}
+
+.courses .card:hover .card-img-top {
+  height: 200px;
+}
+
+.courses .card-body {
+  transition: all 0.3s ease;
+}
+
+.courses .card:hover .card-body {
+  height: auto;
+}
+
+.courses .card-body p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.courses .card:hover .card-body p {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.courses .card-title {
+  font-size: 20px;
+  color: #00ffa2;
+}
+
+.courses .card-text {
+  color: #f1f1f1;
+}
+
+.courses .btn {
+  background-color: #00ffa2;
+  color: #242452;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #00ffa2;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+
+.courses .btn:hover {
+  background-color: #242452;
+  color: #f1f1f1;
+  border-radius: 0;
+}
+
+/* Responsive card padding */
+.courses .col-lg-4,
+.courses .col-md-6,
+.courses .col-sm-12 {
+  margin-bottom: 30px;
+}
+/* End Courses Section */
+
+ 
