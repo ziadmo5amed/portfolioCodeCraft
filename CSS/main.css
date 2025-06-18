@@ -1,13 +1,54 @@
+ @font-face {
+  font-family: 'ArialRounded';
+  src: url('../fonts/ArialRoundedMTBold.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'ArialRounded', sans-serif;
+}
+
+ 
  .main-section {
     background-color: #242452;
      height: 100vh;
      width: 100%;
      border-radius: 0px 0px 300px 0px;
  }
- 
+ .navbar {
+  position: relative;
+}
+ @media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0b0b3d;  
+    z-index: 9999;
+  }
+  .main-section .navbar .container-fluid .navbar-nav li:hover{
+    margin: 0;
+    background-color: #a7a7cc;
+    padding: 0 15px;
+    color: blueviolet !important;
+    transition: all 0.3s ease-in-out;
+ }
+}
+ .main-section .navbar .container-fluid .navbar-toggler-icon{
+  
+   background-color: #00ffa2;
+    
+     
+ }
+ .main-section .navbar .container-fluid .navbar-toggler {
+    outline: none !important;
+    border: none !important;
+    color: white !important;
+   background-color:  #00ffa2 !important;
+ }
  .main-section .navbar .container-fluid .logo{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin-left: 7%;
  }
 
@@ -15,7 +56,7 @@
     width: 100%;
  }
  .main-section .navbar .container-fluid .navbar-nav{
-    /* margin-left: 40%; */
+     
     margin: auto;
  }
 
@@ -39,29 +80,37 @@
  
 /* start header  */
     
-.main-header .container .row .col-6 .header-title {
+.main-header .container .row .col-12 .header-title {
     font-size: 50px;
     font-weight: bold;
     color: #f1f1f1; 
+   
 }
 
-.main-header .container .row .col-6 .lead {
+.main-header .container .row .col-12 .lead {
     color: #f1f1f1;
     font-size: 16px;
 }
 
-.main-header .container .row .col-6 a {
-    background-color: #6fbca0;
-    color: white;
+.main-header .container .row .col-12 a {
+    background-color: #00ffa2;
+    color: #242452;
     transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    width: 150px;
+    height: 40px;
+    border:1px solid #00ffa2;
+    border-radius: 13px;
 }
 
-.main-header .container .row .col-6 a:hover {
+.main-header .container .row .col-12 a:hover {
     background-color: #242452;
     color: #f1f1f1;
+    border:1px solid #00ffa2;
+        border-radius:0;
 }   
  
-.main-header .container .row .col-6 img {
+.main-header .container .row .col-12 img {
     width: 100%;
 }
 
