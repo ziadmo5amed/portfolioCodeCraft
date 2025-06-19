@@ -124,7 +124,11 @@ body {
   box-shadow: 0 0 10px gray;
   overflow: hidden;
 }
-
+.courses .container .title {
+    font-size: 50px;
+    font-weight: bold;
+    
+ }
 .courses .card:hover {
   box-shadow: none;
 }
@@ -194,4 +198,213 @@ body {
 }
 /* End Courses Section */
 
+ /* start about  */
+ .about {
+    background-color: #242452;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px 400px 400px 0px;
+ }
  
+ .about .container .title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+ }
+ .about .container .row .head {
+    font-size: 30px;
+    font-weight: bold;
+    color:#00ffa2;
+ }
+.about .container .row .lead {
+    color: #f1f1f1;
+    font-size: 17px;
+}
+.about .container .row ul li {
+    color: #f1f1f1;
+    font-size: 16px;
+}
+.about .container .row .PS {
+    color: #f1f1f1;
+    font-size: 18px;
+}
+  
+.about .container .row .box {
+width: 300px;
+height: 300px;
+/* background-color: #00ffa2; */
+border-radius: 50%;
+ position: relative;
+transition: all 0.3s ease-in-out;
+  margin-top: 5%;
+  margin-left: 20%;
+ animation: rotate 7s linear infinite;
+}
+@media (max-width: 900px) {
+ .about .container .row .box {
+width: 250px;
+height: 250px;
+/* background-color: #00ffa2; */
+border-radius: 50%;
+ position: relative;
+transition: all 0.3s ease-in-out;
+  margin-top: 20%;
+  margin-left: 20%;
+ animation: rotate 7s linear infinite;
+}
+ .about {
+    background-color: #242452;
+    height: 107vh;
+    width: 100%;
+    border-radius: 0px 400px 400px 0px;
+ }
+}
+
+
+@media (max-width: 767px) {
+   .about {
+    background-color: #242452;
+    
+    width: 100%;
+    border-radius: 0;
+ }
+    .about .container .row .box {
+   display: none;
+    }
+  
+    .about .container .row .lead {
+    color: #f1f1f1;
+    font-size: 20px;
+}
+}
+ .about .container .row .box h6:nth-child(1){
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    font-size: 25px;
+    font-weight: bold;
+     color: #e34c26;
+    transition: all 0.3s ease-in-out;
+ }
+ 
+  .about .container .row .box h6:nth-child(2){
+    position: absolute;
+    top: 13%;
+    right: 13%;
+    font-size: 25px;
+    font-weight: bold;
+     color: #264de4; 
+    transition: all 0.3s ease-in-out;
+ }
+   .about .container .row .box h6:nth-child(3){
+    position: absolute;
+     bottom: 13%;
+    right: 13%;
+    font-size: 25px;
+    font-weight: bold;
+     color: #f0db4f;
+    transition: all 0.3s ease-in-out;
+ }
+   .about .container .row .box h6:nth-child(4){
+    position: absolute;
+    bottom: 13%;
+    left: 13%;
+    font-size: 25px;
+    font-weight: bold;
+     color: #61DBFB;
+    transition: all 0.3s ease-in-out;
+   
+ }
+   .about .container .row .box h6:nth-child(5){
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 25px;
+    font-weight: bold;
+     color: #61DBFB;
+    transition: all 0.3s ease-in-out;
+   
+ }
+    .about .container .row .box h6:nth-child(6){
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 25px;
+    font-weight: bold;
+     color: #61DBFB;
+    transition: all 0.3s ease-in-out;
+   
+ }
+    .about .container .row .box h6:nth-child(7){
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-weight: bold;
+     color: #61DBFB;
+    transition: all 0.3s ease-in-out;
+   
+ }
+     .about .container .row .box h6:nth-child(8){
+    position: absolute;
+    top: 50%;
+     right: 0%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-weight: bold;
+     color: #61DBFB;
+    transition: all 0.3s ease-in-out;
+   
+ }
+      .about .container .row .box h6:nth-child(9){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+     color: #61DBFB;
+    transition: all 0.3s ease-in-out;
+   
+ }
+ @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}     
+ /* end about  */
+
+ /* start contact  */
+  .contact {
+    height: 60vh;
+  }
+ 
+ .contact .container .title {
+    font-size: 50px;
+    font-weight: bold;
+ }
+
+.contact .container a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #242452;
+  font-weight: 500;
+  font-size: 20px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.contact .container a:hover {
+  color: #00965f;  
+  text-decoration: underline;
+  /* transform: scale(1.05); */
+}
+ /* end contact */
